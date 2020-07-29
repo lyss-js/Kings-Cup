@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>King's Cup</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            body {
+                background-image: linear-gradient(-180deg, #ffea00 29%, #ffbc00 100%);
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+
+            .container {
+                padding-top: 5%;
+            }
+
+            .card {
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+                height: 400px;
+                width: 300px;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card-bg {
+                background-image: url(Group\ 3\ \(5\).png);
+            }
+
+            h4.card-suit {
+                position: absolute;
+                top: 16px;
+            }
+
+            .card-number {
+                position: absolute;
+                top: 16px;
+                left: 44px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            #click {
+                background-color: #ED1313;
+                border: none;
+                padding: 15px 30px;
+                border-radius: 30px;
+                color: #ffffff;
+                font-weight: 700;
+            }
+
+            #click:active {
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1>King's Cup</h1>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class='col-12'>
+                    <div class="card card-bg">
+                        <div class="card-body">
+                            <h4 class='card-suit'></h4>
+                            <div class='card-number'></div>
+                            <h5 class="card-title card-todo"></h5>
+                            <p class="card-action"></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class='col-12'>
+                    <button id="click" class='btn'>Start Game</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+        crossorigin="anonymous"></script>
+
+</html>
